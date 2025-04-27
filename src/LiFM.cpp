@@ -7,7 +7,7 @@
 #include <iostream>
 #include <ostream>
 
-LiFM::LiFM()
+LiFM::LiFM() : dataHandler_(std::make_unique<LiFMDataHandler>())
 {
   std::cout << "Hello World" << std::endl;
 }

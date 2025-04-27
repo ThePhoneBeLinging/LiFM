@@ -13,7 +13,7 @@ class LiFM
 public:
   LiFM();
 private:
-  std::shared_ptr<LiFMDataHandler> dataHandler_;
+  std::unique_ptr<LiFMDataHandler> dataHandler_;
 };
 
 
