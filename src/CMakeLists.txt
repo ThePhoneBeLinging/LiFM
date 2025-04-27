@@ -3,7 +3,9 @@ project(LiFM)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(LiFM main.cpp)
+add_executable(LiFM main.cpp
+        LiFM.cpp
+        LiFM.h)
 
 
 target_link_libraries(LiFM PUBLIC LiFM_Data)
