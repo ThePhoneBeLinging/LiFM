@@ -1,12 +1,10 @@
 cmake_minimum_required(VERSION 3.31)
-project(LiFM)
+project(LibLiFM)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(LiFM main.cpp
+add_library(LibLiFM
         LiFM.cpp
-        LiFM.h)
+)
 
-
-target_link_libraries(LiFM PUBLIC LiFM_Data)
-target_link_libraries(LiFM PUBLIC Utility)
+target_include_directories(LibLiFM PUBLIC include)

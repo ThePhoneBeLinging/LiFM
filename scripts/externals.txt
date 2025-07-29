@@ -1,2 +1,0 @@
-https://github.com/ThePhoneBeLinging/Utility.git
-https://github.com/ThePhoneBeLinging/LiFM-Data.git

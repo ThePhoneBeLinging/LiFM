@@ -1,13 +1,13 @@
 //
-// Created by Elias Aggergaard Larsen on 27/04/2025.
+// Created by EAL on 27/04/2025.
 //
 
-#include "LiFM.h"
+#include "LiFM/LiFM.hpp"
 
 #include <iostream>
 #include <ostream>
 
-LiFM::LiFM() : dataHandler_(std::make_unique<LiFMDataHandler>())
+LiFM::LiFM()
 {
-  std::cout << "Hello World" << std::endl;
+  std::cout << "LiFM::LiFM()" << std::endl;
 }
