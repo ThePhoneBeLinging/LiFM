@@ -6,11 +6,15 @@
 #define LIFM_H
 #include <memory>
 
+#include "LiFM-Timeline/LiFMTimeline.hpp"
+
 
 class LiFM
 {
 public:
   LiFM();
+private:
+  std::shared_ptr<LiFMTimeline> timeline_;
 };
 
 

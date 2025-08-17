@@ -7,4 +7,6 @@ add_library(LibLiFM
         LiFM.cpp
 )
 
+target_link_libraries(LibLiFM PUBLIC LiFM_Timeline)
+
 target_include_directories(LibLiFM PUBLIC include)

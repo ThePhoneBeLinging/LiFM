@@ -7,7 +7,14 @@
 #include <iostream>
 #include <ostream>
 
-LiFM::LiFM()
+#include "Utility/ConfigController.h"
+
+LiFM::LiFM() : timeline_(std::make_shared<LiFMTimeline>(std::chrono::system_clock::now()))
 {
-  std::cout << "LiFM::LiFM()" << std::endl;
+  for (int i = 0; i < 10; i++)
+  {
+    std::cout << timeline_->getDateString() << "\n";
+    std::cout << timeline_->getClockString() << "\n";
+    timeline_->advance();
+  }
 }
